@@ -8,9 +8,10 @@ pipeline {
               archive 'target/*.jar'
             }
         }  
-      stage('Uit Tests - JUnit and Jacoco report') {
-      steps {
-        sh "mvn test"
+
+      stage('Unit Tests - JUnit and Jacoco report') {
+          steps {
+            sh "mvn test"
       }
       post {
          always {
@@ -19,4 +20,5 @@ pipeline {
         }
       }
     }
+  }  
 }
