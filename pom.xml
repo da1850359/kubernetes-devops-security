@@ -49,7 +49,7 @@
 			<Plugin>
 				<groupId>
 					org.jacoco
-					</grouId>
+                </grouId>
 					<artifactId>jacoco-maven-plugin</artifactId>
 					<version>0.8.5</version>
 					<executions>
